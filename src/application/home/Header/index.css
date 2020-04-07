@@ -1,0 +1,7 @@
+.img{
+    filter:hue-rotate(70deg);
+}
+.bg{
+    padding: 40px 0 20px;
+    background: #f7f7f7;
+}
