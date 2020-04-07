@@ -1,10 +1,9 @@
 import React from 'react';
 import {Container,Segment,Menu,Header,Icon,Input,Image} from 'semantic-ui-react'
-import Particles from 'react-particles-js';
 
 function SoulHeader(){
     const Item=Menu.Item
-    const k='title1.png'
+    const k='zq.png' //707070
     return(
         <Container>
             <Segment basic>
@@ -12,8 +11,8 @@ function SoulHeader(){
                 <Menu secondary stackable>
                     <Item as='a'>
                         <Header  position='left' > 
-                         <Image className='img'  style={{  filter:'hue-rotate(70deg)'}} src={require('../../../asset/img/titleimg.png')} /> 
-                         <Image className='title'  src={require(`../../../asset/img/${k}`)} /> 
+                            <Image className='img'   src={require('../../../asset/img/titleimg1.png')} /> 
+                            <Image className='img'  src={require(`../../../asset/img/${k}`)} /> 
                          </Header>
                     </Item>
                     <Item>
@@ -28,10 +27,10 @@ function SoulHeader(){
                         <Item as='a' to='/dev'   ><Icon color='grey' name='calendar check outline'/>开发日记</Item>
                         <Item as='a' to='/about' ><Icon color='grey' name='info' /><span>关于我</span></Item>
                     </Menu.Menu>
-                         {/*搜索框 */}
                 </Menu>
             </Segment>
         </Container>
+        
     )
 }
 export default SoulHeader
